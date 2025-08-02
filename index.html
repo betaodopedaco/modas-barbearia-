@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Éclat | Barbearia de Luxo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loader de Luxo -->
+    <div class="loader">
+        <div class="loader-crest"></div>
+        <div class="loader-text" id="loaderText"></div>
+    </div>
+
+    <!-- Cabeçalho Minimalista -->
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">ÉC<span>LAT</span></a>
+            <nav class="nav-links">
+                <a href="#services">Serviços</a>
+                <a href="#barbers">Barbeiros</a>
+                <a href="#products">Produtos</a>
+                <a href="#gallery">Galeria</a>
+                <a href="#booking">Reservas</a>
+            </nav>
+            <div class="nav-actions">
+                <button class="dark-mode-toggle" id="darkModeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Menu Mobile -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="close-menu" id="closeMenu">
+            <i class="fas fa-times"></i>
+        </button>
+        <div class="mobile-links">
+            <a href="#services">Serviços</a>
+            <a href="#barbers">Barbeiros</a>
+            <a href="#products">Produtos</a>
+            <a href="#gallery">Galeria</a>
+            <a href="#booking">Reservas</a>
+            <button class="dark-mode-toggle" id="darkModeToggleMobile">
+                <i class="fas fa-moon"></i> Modo Escuro
+            </button>
+        </div>
+    </div>
+
+    <!-- Seção Hero -->
+    <section class="hero">
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="https://res.cloudinary.com/dc9bv4tqs/video/upload/v1693427260/7085993-hd_1280_720_24fps_esjrdt.mp4" type="video/mp4">
+        </video>
+        <div class="container hero-content">
+            <div class="hero-subtitle">BARBEARIA PREMIUM</div>
+            <h1 class="hero-title">A Arte da Barbearia Clássica</h1>
+            <p class="hero-text">Onde tradição encontra modernidade. Um santuário masculino dedicado ao cuidado pessoal, com serviços exclusivos e atenção aos detalhes.</p>
+            <a href="https://betaodopedaco.github.io/recado-/" class="btn">Reserve Seu Horário</a>
+        </div>
+    </section>
+    
+    <!-- Serviços -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="reveal">Serviços Exclusivos</h2>
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=800" alt="Corte Clássico" class="service-img">
+                    <div class="service-overlay">
+                        <h3 class="service-name">Corte Clássico</h3>
+                        <p>Corte de cabelo com técnicas tradicionais e acabamento impecável</p>
+                        <div class="service-price">R$ 120</div>
+                        <a href="https://betaodopedaco.github.io/recado-/" class="btn">Reservar</a>
+                    </div>
+                </div>
+                <div class="service-card reveal">
+                    <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800" alt="Barba Premium" class="service-img">
+                    <div class="service-overlay">
+                        <h3 class="service-name">Barba Premium</h3>
+                        <p>Tratamento completo com toalhas quentes e produtos de luxo</p>
+                        <div class="service-price">R$ 150</div>
+                        <a href="https://betaodopedaco.github.io/recado-/" class="btn">Reservar</a>
+                    </div>
+                </div>
+                <div class="service-card reveal">
+                    <img src="https://images.unsplash.com/photo-1599351431408-433ef72fe40b?auto=format&fit=crop&w=800" alt="Tratamento Facial" class="service-img">
+                    <div class="service-overlay">
+                        <h3 class="service-name">Tratamento Facial</h3>
+                        <p>Limpeza profunda e hidratação com produtos artesanais</p>
+                        <div class="service-price">R$ 200</div>
+                        <a href="https://betaodopedaco.github.io/recado-/" class="btn">Reservar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nossa História -->
+    <section class="storytelling">
+        <div class="container">
+            <div class="story-grid">
+                <div class="story-content">
+                    <h2 class="reveal">Nossa História</h2>
+                    <p class="reveal">Fundada em 1950, a Éclat Barbearia nasceu da paixão pela arte tradicional da barbearia. Nosso fundador, Giovanni Rossi, trouxe da Itália técnicas ancestrais que aperfeiçoou ao longo de décadas.</p>
+                    <p class="reveal">Hoje, mantemos viva essa tradição enquanto incorporamos inovações modernas. Cada cadeira em nosso estabelecimento é um tributo à história da barbearia, com instrumentos que combinam o vintage e o contemporâneo.</p>
+                    <p class="reveal">Mais que um serviço, oferecemos uma experiência - um momento de pausa no ritmo acelerado da vida moderna, onde o cuidado pessoal se torna um ritual de renovação.</p>
+                </div>
+                <div class="story-image reveal">
+                    <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=800" alt="História da Barbearia">
+                    <div class="year-marker">1950</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Barbeiros -->
+    <section class="barbers" id="barbers">
+        <div class="container">
+            <h2 class="reveal">Mestres Barbeiros</h2>
+            <div class="barbers-grid">
+                <div class="barber-card reveal">
+                    <img src="https://i.ibb.co/9mk6v7Yg/Screenshot-10.png" alt="Screenshot-10" border="0" class="barber-photo"> 
+                    <h3 class="barber-name">Ricardo Silva</h3>
+                    <div class="barber-specialty">Especialista em Barba</div>
+                    <p class="barber-experience">12 anos de experiência | Prêmio Nacional de Barbeiro 2020</p>
+                </div>
+                <div class="barber-card reveal">
+                   <img src="https://i.ibb.co/svchdzw2/Screenshot-11.png" alt="Screenshot-11" border="0" class="barber-photo">
+                    <h3 class="barber-name">Marcos Oliveira</h3>
+                    <div class="barber-specialty">Mestre em Cortes Clássicos</div>
+                    <p class="barber-experience">15 anos de experiência | Formado em Milão</p>
+                </div>
+                <div class="barber-card reveal">
+                    <img src="https://images.unsplash.com/photo-1581403341630-a6e0b9d2d257?auto=format&fit=crop&w=800" alt="Antônio Costa" class="barber-photo">
+                    <h3 class="barber-name">Antônia Costa</h3>
+                    <div class="barber-specialty">Terapeuta Capilar</div>
+                    <p class="barber-experience">10 anos de experiência | Especialista em tratamentos</p>
+                </div>
+            </div>
+            
+            <!-- Seção da Antônia Costa -->
+            <div class="barber-gallery">
+                <div class="gallery-container">
+                    <div class="gallery-title reveal">
+                        <h3>Técnicas Especiais de Antônia Costa</h3>
+                        <p>Conheça o processo artesanal de cuidados capilares que conquistou nossos clientes</p>
+                    </div>
+                    
+                    <div class="gallery-carousel reveal">
+                        <div class="carousel-track">
+                            <div class="carousel-slide active">
+                                <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=800" alt="Técnica de massagem" class="carousel-image">
+                                <div class="carousel-overlay">
+                                    <div class="carousel-caption">
+                                        <h4>Massagem Capilar Revitalizante</h4>
+                                        <p>Técnica exclusiva que estimula o couro cabeludo e promove crescimento saudável</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="carousel-slide">
+                                <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800" alt="Tratamento de barba" class="carousel-image">
+                                <div class="carousel-overlay">
+                                    <div class="carousel-caption">
+                                        <h4>Tratamento Premium para Barba</h4>
+                                        <p>Hidratação profunda com óleos naturais e modelagem precisa</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="carousel-slide">
+                                <img src="https://images.unsplash.com/photo-1599351431408-433ef72fe40b?auto=format&fit=crop&w=800" alt="Cuidados com a pele" class="carousel-image">
+                                <div class="carousel-overlay">
+                                    <div class="carousel-caption">
+                                        <h4>Terapia Facial Regenerativa</h4>
+                                        <p>Limpeza profunda e hidratação com produtos orgânicos selecionados</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="carousel-slide">
+                                <video class="carousel-image" autoplay muted loop playsinline>
+                                    <source src="https://res.cloudinary.com/dc9bv4tqs/video/upload/v1693427260/3998516-uhd_4096_2160_25fps_vkuy5v.mp4" type="video/mp4">
+                                </video>
+                                <div class="carousel-overlay">
+                                    <div class="carousel-caption">
+                                        <h4>Processo Artesanal</h4>
+                                        <p>Cada serviço é uma obra de arte com atenção aos mínimos detalhes</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="carousel-nav">
+                            <div class="carousel-btn prev-btn">
+                                <i class="fas fa-chevron-left"></i>
+                            </div>
+                            <div class="carousel-btn next-btn">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="carousel-dots">
+                            <div class="carousel-dot active"></div>
+                            <div class="carousel-dot"></div>
+                            <div class="carousel-dot"></div>
+                            <div class="carousel-dot"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-description reveal">
+                        <p><strong>Antônia Costa</strong> é especialista em terapias capilares com formação internacional. Seus métodos combinam técnicas tradicionais com inovações modernas, oferecendo resultados visíveis desde a primeira sessão. Cada tratamento é personalizado conforme as necessidades específicas do cliente, utilizando produtos orgânicos selecionados e métodos artesanais que preservam a essência da barbearia clássica.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Galeria -->
+    <section class="gallery" id="gallery">
+        <div class="gallery-grid">
+            <div class="gallery-item large">
+                <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1200" alt="Galeria Barbearia" class="gallery-img">
+                <div class="gallery-overlay">
+                    <span class="gallery-tag">BARBA PREMIUM</span>
+                    <h3>O Ritual Completo</h3>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&w=800" alt="Detalhes de Corte" class="gallery-img">
+                <div class="gallery-overlay">
+                    <span class="gallery-tag">CORTE PRECISO</span>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <video class="gallery-img" autoplay muted loop playsinline>
+                    <source src="https://res.cloudinary.com/dc9bv4tqs/video/upload/v1693427260/3998516-uhd_4096_2160_25fps_vkuy5v.mp4" type="video/mp4">
+                </video>
+                <div class="gallery-overlay">
+                    <span class="gallery-tag">PRODUTOS EXCLUSIVOS</span>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1599351431408-433ef72fe40b?auto=format&fit=crop&w=800" alt="Tratamentos" class="gallery-img">
+                <div class="gallery-overlay">
+                    <span class="gallery-tag">TRATAMENTOS ESPECIAIS</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produtos -->
+    <section class="products" id="products">
+        <div class="container">
+            <h2 class="reveal">Linha de Produtos</h2>
+            <div class="products-grid">
+                <div class="product-card reveal">
+                    <img src="https://i.ibb.co/Q7CW1dqg/pexels-alesiakozik-7796159.jpg" alt="Óleo para Barba" class="product-img">
+                    <h3 class="product-name">Óleo para Barba Éclat</h3>
+                    <p class="product-desc">Hidrata e suaviza com óleos essenciais de Jojoba e Argan. Fragrância amadeirada premium.</p>
+                    <div class="product-price">R$ 149</div>
+                    <a href="https://betaodopedaco.github.io/recado-/" class="btn">Adicionar ao Carrinho</a>
+                </div>
+                <div class="product-card reveal">
+                    <img src="https://i.ibb.co/6cVVvgmj/pexels-cup-of-couple-8015480.jpg" alt="Pomada Modeladora" class="product-img">
+                    <h3 class="product-name">Pomada Modeladora</h3>
+                    <p class="product-desc">Fixação forte com brilho natural. Ideal para penteados clássicos e modernos.</p>
+                    <div class="product-price">R$ 129</div>
+                    <a href="https://betaodopedaco.github.io/recado-/" class="btn">Adicionar ao Carrinho</a>
+                </div>
+                <div class="product-card reveal">
+                    <img src="https://i.ibb.co/Zsq6KZn/pexels-maorattias-5192478.jpg" alt="Kit Barba Completo" class="product-img">
+                    <h3 class="product-name">Kit Barba Completo</h3>
+                    <p class="product-desc">Kit premium com óleo, balm, shampoo e pente de madeira nobre. Em estojo de couro.</p>
+                    <div class="product-price">R$ 399</div>
+                    <a href="https://betaodopedaco.github.io/recado-/" class="btn">Adicionar ao Carrinho</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reserva -->
+    <section class="booking" id="booking">
+        <div class="container">
+            <h2 class="reveal">Reserva Exclusiva</h2>
+            <div class="booking-container">
+                <div class="booking-image reveal">
+                    <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=1200" alt="Reserva" style="width:100%; height:600px; object-fit:cover;">
+                </div>
+                <div class="booking-form reveal">
+                    <h3 style="margin-bottom: 2rem;">Agende sua Experiência</h3>
+                    <form id="bookingForm">
+                        <div class="form-group">
+                            <label for="name">Nome Completo</label>
+                            <input type="text" id="name" required>
+                            <div class="form-error">Por favor, insira seu nome</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
+                            <div class="form-error">Por favor, insira um email válido</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefone</label>
+                            <input type="tel" id="phone" required>
+                            <div class="form-error">Por favor, insira seu telefone</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Serviço</label>
+                            <select id="service" required>
+                                <option value="">Selecione um serviço</option>
+                                <option value="haircut">Corte Clássico - R$120</option>
+                                <option value="beard">Barba Premium - R$150</option>
+                                <option value="facial">Tratamento Facial - R$200</option>
+                                <option value="combo">Completo (Corte + Barba) - R$240</option>
+                            </select>
+                            <div class="form-error">Por favor, selecione um serviço</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="barber">Barbeiro Preferido</label>
+                            <select id="barber">
+                                <option value="">Qualquer barbeiro</option>
+                                <option value="ricardo">Ricardo Silva</option>
+                                <option value="marcos">Marcos Oliveira</option>
+                                <option value="antonio">Antônia Costa</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Data e Hora</label>
+                            <input type="datetime-local" id="date" required>
+                            <div class="form-error">Por favor, selecione uma data e hora</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="notes">Observações</label>
+                            <textarea id="notes"></textarea>
+                        </div>
+                        <button type="submit" class="btn" style="width:100%; margin-top:1rem;">Reservar Agora</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="#" class="footer-logo">ÉCLAT</a>
+                    <p>O refúgio definitivo para o homem moderno que valoriza tradição, qualidade e atenção aos detalhes.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Serviços</h4>
+                    <div class="footer-links">
+                        <a href="https://betaodopedaco.github.io/recado-/">Cortes de Cabelo</a>
+                        <a href="https://betaodopedaco.github.io/recado-/">Tratamentos de Barba</a>
+                        <a href="https://betaodopedaco.github.io/recado-/">Tratamentos Faciais</a>
+                        <a href="https://betaodopedaco.github.io/recado-/">Pacotes Completos</a>
+                        <a href="https://betaodopedaco.github.io/recado-/">Serviços Corporativos</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Produtos</h4>
+                    <div class="footer-links">
+                        <a href="https://betaodopedaco.github.io/recado-/">Cuidados com Barba</a>
+                        <a href="https://betaodopedaco.github.io/recado-/">Cuidados com Cabelo</a>
+                        <a href="https://betaodopedaco.github.io/recado-/">Tratamentos Faciais</a>
+                        <a href="https://betaodopedaco.github.io/recado-/">Acessórios Premium</a>
+                        <a href="https://betaodopedaco.github.io/recado-/">Kits Presente</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Contato</h4>
+                    <div class="contact-info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Rua Oscar Freire, 1200 - São Paulo</span>
+                    </div>
+                    <div class="contact-info">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+55 11 99639-9429</span>
+                    </div>
+                    <div class="contact-info">
+                        <i class="fas fa-envelope"></i>
+                        <span>reservas@eclatbarbearia.com</span>
+                    </div>
+                    <div class="contact-info">
+                        <i class="fas fa-clock"></i>
+                        <span>Seg-Sáb: 10h-20h | Dom: 11h-17h</span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2023 ÉCLAT BARBEARIA. Todos os direitos reservados. A excelência em cuidados masculinos.
+            </div>
+            <div class="animated-crest">
+                É
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <span class="close-lightbox" id="closeLightbox">&times;</span>
+        <img class="lightbox-content" id="lightboxImg">
+    </div>
+    
+    <!-- Botão Voltar ao Topo -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+    
+    <!-- Botão WhatsApp -->
+    <a class="whatsapp-button" id="whatsappButton">
+        <i class="fab fa-whatsapp"></i>
+        Fale conosco
+    </a>
+    
+    <!-- Marca d'água -->
+    <div class="watermark">
+        <strong>Quer um site profissional e presença no Google?</strong><br>
+        Aperte o botão verde agora mesmo!
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
